@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: aquamarine;
+    }
+
+    .box1{
+        background-color: darkgrey;
+        height: 130px;
+        width: 1470px;
+        margin-top: 280px;
+    }
+
+    .box2 {
+        width: 180px;
+        height: 100px;
+        background-color: brown;
+        display: flex;
+        position: relative;
+        animation-name: Box;
+        animation-duration: 3s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+    }
+    @keyframes Box{
+            from { left: 0px;}
+            to {left: 1250px;}
+
+            }
+
+    .box3{
+        height: 40px;
+        width: 40px;
+        border-radius: 100px;
+        background-color: black;
+        margin-top: 70px;
+        margin-left: 10px;
+        
+    }
+
+    .box4{
+        height: 40px;
+        width: 40px;
+        border-radius: 100px;
+        background-color: black;
+        margin-left: 80px;
+        margin-top: 70px;
+    }
+</style>
+<body>
+    <div class="box1">
+        <div class="box2">
+             <div class="box3"></div>
+             <div class="box4"></div>
+        </div>
+        
+    </div>
+</body>
+</html>
